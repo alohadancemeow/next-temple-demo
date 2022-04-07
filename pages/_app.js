@@ -33,11 +33,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    /* margin: 0;
-    padding: 0; */
     box-sizing: border-box;
     font-family: 'Fredoka', sans-serif;
     position: relative;
+
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    min-height: 100%;
+    background-color: #fff;
   }
 `
 

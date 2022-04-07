@@ -78,7 +78,8 @@ export const HeroButton = styled.a`
     text-transform: uppercase;
 
     &:hover {
-        color: orange;
+        /* color: orange; */
+        color: #743f2f;
     }
 
     /* transition: background-color 400ms ease, opacity 400ms ease, box-shadow 400ms ease; */

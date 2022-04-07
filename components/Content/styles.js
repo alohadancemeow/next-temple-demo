@@ -49,7 +49,7 @@ export const TextLink = styled.a`
 `
 
 export const SubHeadLine = styled.div`
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -82,14 +82,6 @@ export const ProductBox = styled.div`
 `
 
 export const ProductWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    margin: 0 -10px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-`
-export const ProductWrapper2 = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px 0;

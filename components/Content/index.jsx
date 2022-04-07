@@ -14,12 +14,14 @@ import {
     Line,
     ProductBox,
     ProductWrapper,
-    ProductWrapper2
 } from './styles'
+
+import { Carousel } from 'antd'
 
 const fakeProduct1 = [
     { id: '1', desc: 'product01', image: '/image1.jpg' },
     { id: '2', desc: 'product02', image: '/image2.jpg' },
+    { id: '3', desc: 'product03', image: '/image1.jpg' },
 ]
 const fakeProduct2 = [
     { id: '1', desc: 'product01', image: '/image1.jpg' },
@@ -29,6 +31,7 @@ const fakeProduct2 = [
     { id: '5', desc: 'product05', image: '/image1.jpg' },
     { id: '6', desc: 'product06', image: '/image2.jpg' },
 ]
+
 
 const Content = () => {
     return (
@@ -49,11 +52,17 @@ const Content = () => {
                 </SubHeadLine>
 
                 <ProductBox>
-                    <ProductWrapper>
+                    <Carousel
+                        autoplay
+                        draggable
+                        dotPosition='top'
+                    >
                         {fakeProduct1.map(item => (
-                            <ProductSection1 item={item} key={item.id} />
+                            <div style={{ width: 'fit-content' }} key={item.id}>
+                                <ProductSection1 item={item} key={item.id} />
+                            </div>
                         ))}
-                    </ProductWrapper>
+                    </Carousel>
                 </ProductBox>
 
                 <SubHeadLine>
@@ -63,12 +72,18 @@ const Content = () => {
                 </SubHeadLine>
 
                 <ProductBox>
-                    <ProductWrapper2>
+                    <ProductWrapper>
                         {fakeProduct2.map(item => (
                             <ProductSection2 item={item} key={item.id} />
                         ))}
-                    </ProductWrapper2>
+                    </ProductWrapper>
                 </ProductBox>
+
+                <SubHeadLine>
+                    <Line />
+                    <Label>Contact us</Label>
+                    <Line />
+                </SubHeadLine>
 
             </ContenWrapper>
         </ContentSection>

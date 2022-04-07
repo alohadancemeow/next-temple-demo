@@ -8,16 +8,16 @@ import {
 
 const ProductSection1 = ({ item }) => {
     return (
-        <ProductItem>
-            <ProductItemImage
-                src={item.image}
-                alt={item.desc}
-                preview={false}
-            />
-            <ProductItemDescription>
-                {item.desc}
-            </ProductItemDescription>
-        </ProductItem>
+            <ProductItem>
+                <ProductItemImage
+                    src={item.image}
+                    alt={item.desc}
+                    preview={false}
+                />
+                <ProductItemDescription>
+                    {item.desc}
+                </ProductItemDescription>
+            </ProductItem>
     )
 }
 

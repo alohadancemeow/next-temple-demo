@@ -16,9 +16,14 @@ export const ProductItem = styled.div`
 export const ProductItemImage = styled(Image)`
     position: relative;
     margin-bottom: 10px;
-    width: 460px;
-    height: 540px;
-    object-fit: cover;
+    
+    &.ant-image-img {
+        /* width: 460px;
+        height: 540px; */
+        width: 920px;
+        height: 780px;
+        object-fit: cover;
+    }
 
     /* background-image: url('/image1.jpg');
     background-position: 50% 50%;

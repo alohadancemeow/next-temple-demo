@@ -1,9 +1,36 @@
 import React from 'react'
 
-const HeroSection = () => {
+import {
+  HeroSection,
+  HeroImage,
+  HeroContent,
+  HeroText,
+  HeroHeadlineWrapper,
+  HeroButton,
+  TextLabel,
+  TextHeaderLine,
+  TextParagraph
+} from './styles'
+
+const Hero = () => {
   return (
-    <div>HeroSection</div>
+    <HeroSection>
+      <HeroImage>
+        <HeroContent>
+          <HeroText>
+            <HeroHeadlineWrapper>
+              <TextLabel>This is label of headline</TextLabel>
+              <TextHeaderLine>Headline</TextHeaderLine>
+              <TextParagraph>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, explicabo?</TextParagraph>
+            </HeroHeadlineWrapper>
+            <HeroButton>
+              <span>Explore</span>
+            </HeroButton>
+          </HeroText>
+        </HeroContent>
+      </HeroImage>
+    </HeroSection>
   )
 }
 
-export default HeroSection
+export default Hero

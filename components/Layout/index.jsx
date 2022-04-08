@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Footer from '../Footer'
+import Contact from '../Contact'
 
 const Layout = ({ children, title = 'next-temple-demo' }) => {
     return (
@@ -27,6 +28,7 @@ const Layout = ({ children, title = 'next-temple-demo' }) => {
 
             <main>
                 {children}
+                <Contact />
             </main>
             <Footer />
         </div>

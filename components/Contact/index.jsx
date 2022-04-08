@@ -10,7 +10,7 @@ import {
 
 const Contact = () => {
     return (
-        <ContactSection>
+        <ContactSection id='contact'>
             <ContactWrapper>
                 <Content>
                     <MapBox>Map</MapBox>

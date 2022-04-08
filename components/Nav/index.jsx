@@ -12,10 +12,10 @@ const Nav = () => {
         </Link>
       </NavLogo>
       <NavigationMenu>
-        <Link href='/'>
+        <Link href='/about'>
           <a>about</a>
         </Link>
-        <Link href='/'>
+        <Link href='#contact'>
           <a>contact</a>
         </Link>
         <Link href='/'>

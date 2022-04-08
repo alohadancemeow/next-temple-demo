@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Footer from '../Footer'
 import Contact from '../Contact'
+import Nav from '../Nav'
 
 const Layout = ({ children, title = 'next-temple-demo' }) => {
     return (
@@ -27,6 +28,7 @@ const Layout = ({ children, title = 'next-temple-demo' }) => {
             </Head>
 
             <main>
+                <Nav />
                 {children}
                 <Contact />
             </main>

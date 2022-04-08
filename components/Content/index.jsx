@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import ProductSection1 from './Products/ProductSection1'
 import ProductSection2 from './Products/ProductSection2'
@@ -9,12 +10,15 @@ import {
     Header,
     Paragraph,
     TextLink,
-    SubHeadLine,
-    Label,
-    Line,
     ProductBox,
     ProductWrapper,
 } from './styles'
+
+import {
+    SubHeadLine,
+    Label,
+    Line,
+} from '../elememtStyles'
 
 import { Carousel } from 'antd'
 
@@ -40,9 +44,9 @@ const Content = () => {
                 <TextBox>
                     <Header>Content Header</Header>
                     <Paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quo facilis porro illum magni molestias asperiores rem odio quasi. Et, possimus ducimus cupiditate voluptatibus consequatur itaque minima dolorem magnam cumque!</Paragraph>
-                    <TextLink>
-                        <span>Read more</span>
-                    </TextLink>
+                    <Link href='/about'>
+                        <TextLink>Read more</TextLink>
+                    </Link>
                 </TextBox>
 
                 <SubHeadLine>
@@ -53,7 +57,7 @@ const Content = () => {
 
                 <ProductBox>
                     <Carousel
-                        // autoplay
+                        autoplay
                         draggable
                         dotPosition='top'
                     >

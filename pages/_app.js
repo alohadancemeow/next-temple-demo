@@ -4,6 +4,7 @@ import { createGlobalStyle, ThemeProvider, css } from 'styled-components'
 // useing antd css
 const antdCss = css`
   ${import('antd/dist/antd.css')}
+  font-family: 'Fredoka', sans-serif;
 `;
 
 // set global style --> reset css

@@ -20,7 +20,7 @@ export const ProductItemImage = styled(Image)`
     &.ant-image-img {
         /* width: 460px;
         height: 540px; */
-        width: 920px;
+        width: 940px;
         height: 780px;
         object-fit: cover;
     }
@@ -34,9 +34,12 @@ export const ProductItemImage = styled(Image)`
 export const ProductItemImage2 = styled(Image)`
     position: relative;
     margin-bottom: 10px;
-    width: 300px;
-    height: 380px;
-    object-fit: cover;
+    
+    &.ant-image-img {
+        width: 300px;
+        height: 380px;
+        object-fit: cover;
+    }
 `
 
 export const ProductItemDescription = styled.div`

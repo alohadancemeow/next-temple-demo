@@ -35,7 +35,7 @@ const fakeProduct2 = [
 
 const Content = () => {
     return (
-        <ContentSection>
+        <ContentSection id='content'>
             <ContenWrapper>
                 <TextBox>
                     <Header>Content Header</Header>
@@ -53,7 +53,7 @@ const Content = () => {
 
                 <ProductBox>
                     <Carousel
-                        autoplay
+                        // autoplay
                         draggable
                         dotPosition='top'
                     >

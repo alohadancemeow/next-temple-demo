@@ -23,7 +23,7 @@ const Hero = () => {
               <TextHeaderLine>Headline</TextHeaderLine>
               <TextParagraph>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, explicabo?</TextParagraph>
             </HeroHeadlineWrapper>
-            <HeroButton>
+            <HeroButton href='#content'>
               <span>Explore</span>
             </HeroButton>
           </HeroText>

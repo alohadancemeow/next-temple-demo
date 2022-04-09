@@ -7,7 +7,7 @@ export const ProductItem = styled.div`
     flex-direction: column;
     align-items: center;
     /* width: 50%; */
-    padding: 0 10px 10px;
+    /* padding: 0 10px 10px; */
     text-align: center;
     /* margin-bottom: 10px; */
 `

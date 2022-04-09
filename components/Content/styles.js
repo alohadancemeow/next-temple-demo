@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContentSection = styled.div`
     position: relative;
     display: block;
-    overflow: hidden;
+    /* overflow: hidden; */
 `
 export const ContenWrapper = styled.div`
     position: relative;
@@ -56,6 +56,6 @@ export const ProductBox = styled.div`
 export const ProductWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px 0;
-    margin: 0 -10px;
+    gap: 15px 15px;
+    /* margin: 0 -10px; */
 `

@@ -4,9 +4,11 @@ import Footer from '../Footer'
 import Contact from '../Contact'
 import Nav from '../Nav'
 
+import { LayoutWrapper } from './styles'
+
 const Layout = ({ children, title = 'next-temple-demo' }) => {
     return (
-        <div>
+        <LayoutWrapper>
             <Head>
                 <meta charSet="utf-8" />
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -33,7 +35,7 @@ const Layout = ({ children, title = 'next-temple-demo' }) => {
                 <Contact />
             </main>
             <Footer />
-        </div>
+        </LayoutWrapper>
     )
 }
 

@@ -13,6 +13,10 @@ export const HeroImage = styled.div`
     background-color: #050827;
     display: flex;
     align-items: center;
+
+    background-image: linear-gradient(180deg, rgba(5, 8, 39, 0.4), rgba(5, 8, 39, 0.4)), url("/image3.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
 `
 export const HeroContent = styled.div`
     width: 940px;

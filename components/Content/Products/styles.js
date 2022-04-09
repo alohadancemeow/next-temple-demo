@@ -5,17 +5,16 @@ import { Image } from "antd"
 export const ProductItem = styled.div`
     display: flex;
     flex-direction: column;
-    /* width: 50%; */
-    padding-right: 10px;
-    padding-left: 10px;
     align-items: center;
+    /* width: 50%; */
+    padding: 0 10px 10px;
     text-align: center;
-    
+    /* margin-bottom: 10px; */
 `
 
 export const ProductItemImage = styled(Image)`
     position: relative;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     
     &.ant-image-img {
         /* width: 460px;
@@ -33,7 +32,7 @@ export const ProductItemImage = styled(Image)`
 `
 export const ProductItemImage2 = styled(Image)`
     position: relative;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     
     &.ant-image-img {
         width: 300px;

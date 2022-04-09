@@ -6,18 +6,37 @@ import {
     ProductItemDescription,
 } from './styles'
 
+import { Card } from 'antd';
+const { Meta } = Card;
+
 const ProductSection1 = ({ item }) => {
     return (
-            <ProductItem>
-                <ProductItemImage
+        <ProductItem>
+            {/* <ProductItemImage
                     src={item.image}
                     alt={item.desc}
                     preview={false}
                 />
                 <ProductItemDescription>
                     {item.desc}
-                </ProductItemDescription>
-            </ProductItem>
+                </ProductItemDescription> */}
+
+            <Card
+                hoverable
+                cover={
+                    <ProductItemImage
+                        src={item.image}
+                        alt={item.desc}
+                        preview={false}
+                    />
+                }
+            >
+                <Meta
+                    title={item.desc}
+                    description='2022, Apr 9'
+                />
+            </Card>
+        </ProductItem>
     )
 }
 

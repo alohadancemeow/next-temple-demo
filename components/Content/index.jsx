@@ -87,12 +87,6 @@ const Content = () => {
                     </ProductWrapper>
                 </ProductBox>
 
-                <SubHeadLine>
-                    <Line />
-                    <Label>Contact us</Label>
-                    <Line />
-                </SubHeadLine>
-
             </ContenWrapper>
         </ContentSection>
     )

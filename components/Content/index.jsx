@@ -22,12 +22,12 @@ import {
 
 import { Carousel } from 'antd'
 
-const fakeProduct1 = [
+export const fakeProduct1 = [
     { id: '1', desc: 'product01', image: '/image1.jpg' },
     { id: '2', desc: 'product02', image: '/image2.jpg' },
     { id: '3', desc: 'product03', image: '/image1.jpg' },
 ]
-const fakeProduct2 = [
+export const fakeProduct2 = [
     { id: '1', desc: 'product01', image: '/image1.jpg' },
     { id: '2', desc: 'product02', image: '/image2.jpg' },
     { id: '3', desc: 'product03', image: '/image1.jpg' },
@@ -78,7 +78,11 @@ const Content = () => {
                 <ProductBox>
                     <ProductWrapper>
                         {fakeProduct2.map(item => (
-                            <ProductSection2 item={item} key={item.id} />
+                            <Link key={item.id} href={`/product/${item.id}`}>
+                                <a>
+                                    <ProductSection2 item={item} />
+                                </a>
+                            </Link>
                         ))}
                     </ProductWrapper>
                 </ProductBox>

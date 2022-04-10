@@ -16,14 +16,38 @@ export const NavLogo = styled.h2`
 
 `
 
-export const NavigationMenu = styled.div`
+export const MenuWrapper = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
-    a {
-        padding: 0 10px;
-        color: black;
-        /* text-transform: uppercase; */
-    }
+`
+
+export const NavigationMenu = styled.div`
+    margin-right: 15px;
+`
+
+export const NavLink = styled.a`
+    text-decoration: none;
+    padding: 0 10px;
+    color: ${({ active }) => active ? '#a25f4b' : 'gray'};
+
+    &:hover {
+        /* border-bottom: 2px solid rgba(162, 95, 75, 0.2);
+        border-bottom-color: rgba(162, 95, 75, 0.7); */
+        /* color: #743f2f; */
+        /* color: orange; */
+        color: rgba(162, 95, 75, 0.7);
+     }
+`
+
+export const CopyButton = styled.button`
+    border: none;
+    border-radius: 50%;
+    /* background-color: #a25f4b; */
+    /* color: white; */
+
+    &:hover{
+        color: #743f2f;
+     }
 `

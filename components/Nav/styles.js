@@ -12,7 +12,13 @@ export const NavWrapper = styled.div`
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-        width: 890px;
+        /* width: 890px; */
+        width: 700px;
+    }
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        /* width: 890px; */
+        width: 100%;
+        padding: 1rem ;
     }
 `
 

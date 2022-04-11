@@ -5,6 +5,10 @@ export const FooterSection = styled.footer`
     margin: 0 auto;
     padding: 2rem 0;
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        padding: 1.5rem 0;
+    }
 `
 
 export const FooterTitle = styled.h2`
@@ -20,10 +24,10 @@ export const FooterSubtitle = styled.h4`
     color: gray;
     font-weight: normal;
 
-    @media screen and (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    /* @media screen and (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
        display: flex;
        flex-direction: column;
-    }
+    } */
 `
 
 export const FooterLink = styled.a`

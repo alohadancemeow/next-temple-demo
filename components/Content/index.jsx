@@ -12,6 +12,7 @@ import {
     TextLink,
     ProductBox,
     ProductWrapper,
+    ProductSliderWrapper
 } from './styles'
 
 import {
@@ -56,17 +57,19 @@ const Content = () => {
                 </SubHeadLine>
 
                 <ProductBox>
-                    <Carousel
-                        autoplay
-                        draggable
-                        dotPosition='top'
-                    >
-                        {fakeProduct1.map(item => (
-                            <div style={{ width: 'fit-content' }} key={item.id}>
-                                <ProductSection1 item={item} key={item.id} />
-                            </div>
-                        ))}
-                    </Carousel>
+                    <ProductSliderWrapper>
+                        <Carousel
+                            // autoplay
+                            draggable
+                            dotPosition='top'
+                        >
+                            {fakeProduct1.map(item => (
+                                <div style={{ width: 'fit-content' }} key={item.id}>
+                                    <ProductSection1 item={item} key={item.id} />
+                                </div>
+                            ))}
+                        </Carousel>
+                    </ProductSliderWrapper>
                 </ProductBox>
 
                 <SubHeadLine>

@@ -6,6 +6,10 @@ export const SubHeadLine = styled.div`
     align-items: center;
     text-align: center;
     justify-content: center;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        margin-bottom: 30px;
+    }
 `
 
 export const Label = styled.div`

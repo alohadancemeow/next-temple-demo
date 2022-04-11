@@ -6,10 +6,10 @@ export const ProductItem = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 50%; */
+    width: 100%;
     /* padding: 0 10px 10px; */
     text-align: center;
-    /* margin-bottom: 10px; */
+    /* margin-bottom: 15px; */
 `
 
 export const ProductItemImage = styled(Image)`
@@ -22,6 +22,15 @@ export const ProductItemImage = styled(Image)`
         width: 940px;
         height: 780px;
         object-fit: cover;
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+            width: 100%;
+            height: 700px;
+        }
+        @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+            /* height: 400px; */
+            height: 100%;
+        }   
     }
 
     /* background-image: url('/image1.jpg');
@@ -38,6 +47,15 @@ export const ProductItemImage2 = styled(Image)`
         width: 300px;
         height: 380px;
         object-fit: cover;
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+            width: 350px;
+        }
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+            width: 100%;
+            height: 100%;
+        }
     }
 `
 

@@ -31,31 +31,29 @@ const AboutPage = () => {
                         </HeadLineWrapper>
                     </Content>
                 </ContentWrapper>
-
-
-                <MainWrapper>
-                    <MainContent>
-                        <MainImage
-                            preview={false}
-                            src='/image2.jpg'
-                            alt='image'
-                        />
-
-                        <SubHeadLine>
-                            <Line />
-                            <Label>INTRODUCTIONS</Label>
-                            <Line />
-                        </SubHeadLine>
-
-                        <MainText>
-                            <Header>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, incidunt.</Header>
-                            <Paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, cupiditate sint! Nobis accusantium atque, expedita labore, fugit rerum ab reprehenderit asperiores ipsa dolorum optio a corrupti animi, deleniti sit repellendus?</Paragraph>
-                        </MainText>
-
-                    </MainContent>
-                </MainWrapper>
-
             </Container>
+
+            <MainWrapper>
+                <MainContent>
+                    <MainImage
+                        preview={false}
+                        src='/image2.jpg'
+                        alt='image'
+                    />
+
+                    <SubHeadLine>
+                        <Line />
+                        <Label>INTRODUCTIONS</Label>
+                        <Line />
+                    </SubHeadLine>
+
+                    <MainText>
+                        <Header>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, incidunt.</Header>
+                        <Paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, cupiditate sint! Nobis accusantium atque, expedita labore, fugit rerum ab reprehenderit asperiores ipsa dolorum optio a corrupti animi, deleniti sit repellendus?</Paragraph>
+                    </MainText>
+
+                </MainContent>
+            </MainWrapper>
         </>
     )
 }

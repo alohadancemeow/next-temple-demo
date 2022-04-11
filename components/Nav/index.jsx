@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { Tooltip, Drawer } from 'antd';
 import { BlockOutlined, AppstoreOutlined, FacebookFilled, TwitterSquareFilled, InstagramFilled } from '@ant-design/icons'
 import {
+  NavBar,
   NavWrapper,
   NavLogo,
   NavigationMenu,
@@ -48,106 +49,108 @@ const Nav = () => {
   }, [])
 
   return (
-    <NavWrapper>
-      <NavLogo>
-        <Link href='/'>
-          <a>Temple-demo.</a>
-        </Link>
-      </NavLogo>
+    <NavBar>
+      <NavWrapper>
+        <NavLogo>
+          <Link href='/'>
+            <a>Temple-demo.</a>
+          </Link>
+        </NavLogo>
 
-      <MenuWrapper>
-        <NavigationMenu>
-
-          {navMenus.map(menu => (
-            <Link key={menu.id} href={menu.href}>
-              <NavLink active={menu.href === path}>
-                {menu.text}
-              </NavLink>
-            </Link>
-          ))}
-        </NavigationMenu>
-
-        <Tooltip placement="right" title='Copy link!' autoAdjustOverflow>
-          <CopyButton onClick={copy} >
-            {!copied
-              ? <BlockOutlined />
-              : <BlockOutlined style={{ color: '#a25f4b' }} />
-            }
-          </CopyButton>
-        </Tooltip>
-      </MenuWrapper>
-
-      <MobileButton onClick={() => setVisible(true)}>
-        <AppstoreOutlined style={{ fontSize: '25px' }} />
-      </MobileButton>
-
-      <Drawer
-        // title="Basic Drawer"
-        closeIcon={false}
-        placement="right"
-        onClose={() => setVisible(false)}
-        visible={visible}
-      // size='large'
-      >
-
-        <MobileMenuWrapper>
+        <MenuWrapper>
           <NavigationMenu>
-            <Link href='/'>
-              <NavLink
-                active={path === '/'}
-                onClick={() => setVisible(false)}
-              >
-                home
-              </NavLink>
-            </Link>
+
             {navMenus.map(menu => (
               <Link key={menu.id} href={menu.href}>
-                <NavLink
-                  active={menu.href === path}
-                  onClick={() => setVisible(false)}
-                >
+                <NavLink active={menu.href === path}>
                   {menu.text}
                 </NavLink>
               </Link>
             ))}
           </NavigationMenu>
 
-          <MobileIconWrapper>
-            <div>
-              <CopyButton onClick={copy} >
-                {!copied
-                  ? <BlockOutlined style={{ fontSize: '20px', color: 'gray' }} />
-                  : <BlockOutlined style={{ fontSize: '20px', color: '#a25f4b' }} />
-                }
-              </CopyButton>
-              <CopyButton>
-                <FacebookFilled style={{ fontSize: '20px', color: 'gray' }} />
-              </CopyButton>
-              <CopyButton>
-                <TwitterSquareFilled style={{ fontSize: '20px', color: 'gray' }} />
-              </CopyButton>
-              <CopyButton>
-                <InstagramFilled style={{ fontSize: '20px', color: 'gray' }} />
-              </CopyButton>
+          <Tooltip placement="right" title='Copy link!' autoAdjustOverflow>
+            <CopyButton onClick={copy} >
+              {!copied
+                ? <BlockOutlined />
+                : <BlockOutlined style={{ color: '#a25f4b' }} />
+              }
+            </CopyButton>
+          </Tooltip>
+        </MenuWrapper>
 
-            </div>
+        <MobileButton onClick={() => setVisible(true)}>
+          <AppstoreOutlined style={{ fontSize: '25px' }} />
+        </MobileButton>
 
-            <NavLogo>
+        <Drawer
+          // title="Basic Drawer"
+          closeIcon={false}
+          placement="right"
+          onClose={() => setVisible(false)}
+          visible={visible}
+        // size='large'
+        >
+
+          <MobileMenuWrapper>
+            <NavigationMenu>
               <Link href='/'>
-                <a
+                <NavLink
+                  active={path === '/'}
                   onClick={() => setVisible(false)}
-                  style={{ fontSize: '12px' }}
                 >
-                  Temple-demo.
-                </a>
+                  home
+                </NavLink>
               </Link>
-            </NavLogo>
-          </MobileIconWrapper>
-        </MobileMenuWrapper>
+              {navMenus.map(menu => (
+                <Link key={menu.id} href={menu.href}>
+                  <NavLink
+                    active={menu.href === path}
+                    onClick={() => setVisible(false)}
+                  >
+                    {menu.text}
+                  </NavLink>
+                </Link>
+              ))}
+            </NavigationMenu>
 
-      </Drawer>
+            <MobileIconWrapper>
+              <div>
+                <CopyButton onClick={copy} >
+                  {!copied
+                    ? <BlockOutlined style={{ fontSize: '20px', color: 'gray' }} />
+                    : <BlockOutlined style={{ fontSize: '20px', color: '#a25f4b' }} />
+                  }
+                </CopyButton>
+                <CopyButton>
+                  <FacebookFilled style={{ fontSize: '20px', color: 'gray' }} />
+                </CopyButton>
+                <CopyButton>
+                  <TwitterSquareFilled style={{ fontSize: '20px', color: 'gray' }} />
+                </CopyButton>
+                <CopyButton>
+                  <InstagramFilled style={{ fontSize: '20px', color: 'gray' }} />
+                </CopyButton>
 
-    </NavWrapper >
+              </div>
+
+              <NavLogo>
+                <Link href='/'>
+                  <a
+                    onClick={() => setVisible(false)}
+                    style={{ fontSize: '12px' }}
+                  >
+                    Temple-demo.
+                  </a>
+                </Link>
+              </NavLogo>
+            </MobileIconWrapper>
+          </MobileMenuWrapper>
+
+        </Drawer>
+
+      </NavWrapper >
+    </NavBar>
   )
 }
 

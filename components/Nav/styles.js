@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+
+export const NavBar = styled.nav`
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+`
+
 export const NavWrapper = styled.div`
     width: 940px;
     padding: 2rem 0;

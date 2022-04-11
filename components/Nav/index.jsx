@@ -114,29 +114,32 @@ const Nav = () => {
 
           <MobileIconWrapper>
             <div>
-              <Tooltip placement="right" title='Copy link!' autoAdjustOverflow>
-                <CopyButton onClick={copy} >
-                  {!copied
-                    ? <BlockOutlined style={{ fontSize: '25px', color: 'gray' }} />
-                    : <BlockOutlined style={{ fontSize: '25px', color: '#a25f4b' }} />
-                  }
-                </CopyButton>
-              </Tooltip>
-              <CopyButton>
-                <FacebookFilled style={{ fontSize: '25px', color: 'gray' }} />
+              <CopyButton onClick={copy} >
+                {!copied
+                  ? <BlockOutlined style={{ fontSize: '20px', color: 'gray' }} />
+                  : <BlockOutlined style={{ fontSize: '20px', color: '#a25f4b' }} />
+                }
               </CopyButton>
               <CopyButton>
-                <TwitterSquareFilled style={{ fontSize: '25px', color: 'gray' }} />
+                <FacebookFilled style={{ fontSize: '20px', color: 'gray' }} />
               </CopyButton>
               <CopyButton>
-                <InstagramFilled style={{ fontSize: '25px', color: 'gray' }} />
+                <TwitterSquareFilled style={{ fontSize: '20px', color: 'gray' }} />
+              </CopyButton>
+              <CopyButton>
+                <InstagramFilled style={{ fontSize: '20px', color: 'gray' }} />
               </CopyButton>
 
             </div>
 
             <NavLogo>
               <Link href='/'>
-                <a style={{ fontSize: '18px' }}>Temple-demo.</a>
+                <a
+                  onClick={() => setVisible(false)}
+                  style={{ fontSize: '12px' }}
+                >
+                  Temple-demo.
+                </a>
               </Link>
             </NavLogo>
           </MobileIconWrapper>

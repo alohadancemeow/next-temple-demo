@@ -59,7 +59,7 @@ const Content = () => {
                 <ProductBox>
                     <ProductSliderWrapper>
                         <Carousel
-                            // autoplay
+                            autoplay
                             draggable
                             dotPosition='top'
                         >

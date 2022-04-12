@@ -34,10 +34,10 @@ const Contact = () => {
                         <MapBox>
                             <Text>
                                 <HeadlineWrapper>
-                                    <HeaderLine>"</HeaderLine>
+                                    <HeaderLine>&quot;</HeaderLine>
                                     <LabelName>Put the right man in the right job.</LabelName>
                                     <Paragraph> - Someone said - </Paragraph>
-                                    <HeaderLine>"</HeaderLine>
+                                    <HeaderLine>&quot;</HeaderLine>
                                 </HeadlineWrapper>
                             </Text>
                         </MapBox>

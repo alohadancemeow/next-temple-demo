@@ -16,13 +16,16 @@ export const HeroImage = styled.div`
     min-height: 530px;
     /* min-width: 880px; */
     margin: 0 auto;
-    background-color: #050827;
+    /* background-color: #050827; */
+    /* background-color: #4c3f37; */
     display: flex;
     align-items: center;
 
-    background-image: linear-gradient(180deg, rgba(5, 8, 39, 0.4), rgba(5, 8, 39, 0.4)), url("/image3.jpg");
+    background-image: linear-gradient(180deg, rgba(5, 8, 39, 0.4), rgba(5, 8, 39, 0.4)), url("/image2.jpg");
+    /* background-image: linear-gradient(180deg, rgba(5, 8, 39, 0.4), rgba(5, 8, 39, 0.4)), url("/image3.jpg"); */
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
+    background-repeat: no-repeat;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
         /* width: 890px; */

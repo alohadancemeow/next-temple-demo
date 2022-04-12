@@ -5,7 +5,12 @@ import {
     ContactWrapper,
     Content,
     MapBox,
-    TextBox
+    TextBox,
+    Text,
+    HeadlineWrapper,
+    HeaderLine,
+    LabelName,
+    Paragraph
 } from './styles'
 
 import {
@@ -22,12 +27,30 @@ const Contact = () => {
                 <Label>Contact us</Label>
                 <Line />
             </SubHeadLine>
-            
+
             <ContactSection id='contact'>
                 <ContactWrapper>
                     <Content>
-                        <MapBox>Map</MapBox>
-                        <TextBox>Hello there!</TextBox>
+                        <MapBox>
+                            <Text>
+                                <HeadlineWrapper>
+                                    <HeaderLine>"</HeaderLine>
+                                    <LabelName>Put the right man in the right job.</LabelName>
+                                    <Paragraph> - Someone said - </Paragraph>
+                                    <HeaderLine>"</HeaderLine>
+                                </HeadlineWrapper>
+                            </Text>
+                        </MapBox>
+                        <TextBox>
+                            <Text>
+                                <HeadlineWrapper>
+                                    <LabelName>This is label of headline</LabelName>
+                                    <HeaderLine>Someone</HeaderLine>
+                                    <Paragraph>123/321 Chakrabongse Rd.</Paragraph>
+                                    <Paragraph>Tel: 0123456789</Paragraph>
+                                </HeadlineWrapper>
+                            </Text>
+                        </TextBox>
                     </Content>
                 </ContactWrapper>
             </ContactSection>

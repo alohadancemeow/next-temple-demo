@@ -7,15 +7,16 @@ export const NavBar = styled.nav`
     width: 100%;
     background-color: white;
     z-index: 99;
+    margin: 20px 0;
 `
 
 export const NavWrapper = styled.div`
     width: 940px;
-    padding: 2rem 0;
+    padding: 1rem 0;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
+    
     a {
         text-decoration: none;
     }

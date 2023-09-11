@@ -56,7 +56,7 @@ export const NavigationMenu = styled.div`
     }
 `
 
-export const NavLink = styled.a`
+export const NavLink = styled.span`
     text-decoration: none;
     padding: 0 10px;
     color: ${({ active }) => active ? '#a25f4b' : 'gray'};

@@ -5,11 +5,13 @@ import Contact from '../Contact'
 import Nav from '../Nav'
 
 import { LayoutWrapper } from './styles'
+import ClientComponent from '../ClientComponent'
 
 const Layout = ({ children, title = 'next-temple-demo' }) => {
     return (
-        <LayoutWrapper>
-            <Head>
+        <ClientComponent >
+            <LayoutWrapper>
+                <Head>
                     <meta charSet="utf-8" />
                     {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -28,15 +30,17 @@ const Layout = ({ children, title = 'next-temple-demo' }) => {
                     <meta property="og:description" content="next-temple-demo" key="ogdesc" />
                     <title>{title}</title>
                     <link rel="icon" href="/favicon.ico" />
-            </Head>
+                </Head>
 
-            <main>
-                <Nav />
-                {children}
-                <Contact />
-            </main>
-            <Footer />
-        </LayoutWrapper>
+                <main>
+                    <Nav />
+                    {children}
+                    <Contact />
+                </main>
+                <Footer />
+            </LayoutWrapper>
+        </ClientComponent>
+
     )
 }
 

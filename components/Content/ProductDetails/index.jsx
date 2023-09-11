@@ -72,9 +72,7 @@ const ProductDetailPage = ({ product }) => {
                         <ProductWrapper>
                             {fakeProduct1.map(item => (
                                 <Link key={item.id} href={`/product/${item.id}`}>
-                                    <a>
-                                        <ProductSection2 item={item} />
-                                    </a>
+                                    <ProductSection2 item={item} />
                                 </Link>
                             ))}
                         </ProductWrapper>

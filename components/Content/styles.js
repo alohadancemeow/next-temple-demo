@@ -46,7 +46,7 @@ export const Paragraph = styled.p`
     font-size: 16px;
 `
 
-export const TextLink = styled.a`
+export const TextLink = styled.div`
     margin-top: 10px;
     display: inline-block;
     border-bottom: 2px solid rgba(162, 95, 75, 0.2);

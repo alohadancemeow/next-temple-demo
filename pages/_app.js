@@ -1,9 +1,10 @@
 // import '../styles/globals.css'
 import { createGlobalStyle, ThemeProvider, css } from 'styled-components'
+import { ConfigProvider } from 'antd';
 
 // useing antd css
 const antdCss = css`
-  ${import('antd/dist/antd.css')}
+  ${import('antd/dist/reset.css')}
   font-family: 'Fredoka', sans-serif;
 `;
 
@@ -44,6 +45,10 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100%;
     background-color: #fff;
   }
+  
+  a {
+    text-decoration:  none;
+  }
 `
 
 // set theme
@@ -72,9 +77,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <ConfigProvider>
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </ConfigProvider>
     </>
   )
 }

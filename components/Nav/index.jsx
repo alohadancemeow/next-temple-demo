@@ -53,7 +53,7 @@ const Nav = () => {
       <NavWrapper>
         <NavLogo>
           <Link href='/'>
-            <a>Temple-demo.</a>
+            <p>Temple-demo.</p>
           </Link>
         </NavLogo>
 
@@ -136,12 +136,12 @@ const Nav = () => {
 
               <NavLogo>
                 <Link href='/'>
-                  <a
+                  <div
                     onClick={() => setVisible(false)}
                     style={{ fontSize: '12px' }}
                   >
                     Temple-demo.
-                  </a>
+                  </div>
                 </Link>
               </NavLogo>
             </MobileIconWrapper>
